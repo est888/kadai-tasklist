@@ -47,7 +47,6 @@ public class DestroyServlet extends HttpServlet {
 
             // セッションスコープ上の不要になったデータを削除
             request.getSession().removeAttribute("tasks_id");
-
             // indexページへリダイレクト
             response.sendRedirect(request.getContextPath() + "/index");
         }
